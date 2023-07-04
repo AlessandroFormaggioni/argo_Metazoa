@@ -1,1 +1,1 @@
-
+The "pipeline_DE_mi_pi_siRNA.bash" scirpt calls the other scripts. Once you obtained the "ALL_readcount.tab", follow the commands reported in "edgeR_commands.R" to calcualte the differential expression.
