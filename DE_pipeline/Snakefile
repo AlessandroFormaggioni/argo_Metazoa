@@ -1,0 +1,4 @@
+rule sign_overalp:
+	input: '../{sp}_intersect.bam'
+	output: '{sp}_{num}_overlap_{sample}'
+	shell: 'python ../../overlapping_reads.py --input {input} --minquery {wildcards.num} --maxquery {wildcards.num} --mintarget {wildcards.num} --maxtarget {wildcards.num} --overlap {wildcards.sample} --output {output}'

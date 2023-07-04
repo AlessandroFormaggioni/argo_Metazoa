@@ -1,0 +1,4 @@
+rule table_overlap:
+        input: '{sp}_{num}_overlap_{sample}'
+        output: '{sp}_{num}_overlap_{sample}_table_fast'
+        shell: 'python ../../overlap_tab_fasta.py {input} {output} ../split_fasta/{wildcards.sp}_merged_collapsed_{wildcards.num}.fasta'
